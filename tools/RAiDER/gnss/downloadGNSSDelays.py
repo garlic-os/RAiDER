@@ -90,7 +90,7 @@ def download_tropo_delays(
     stats, years,
     gps_repo='UNR',
     writeDir='.',
-    numCPUs=8,
+    numCPUs=os.cpu_count(),
     download=False,
 ):
     '''

@@ -689,7 +689,7 @@ class RaiderStats(object):
                  usr_colormap='hot_r', grid_heatmap=False, grid_delay_mean=False, grid_delay_median=False, grid_delay_stdev=False,
                  grid_seasonal_phase=False, grid_delay_absolute_mean=False, grid_delay_absolute_median=False,
                  grid_delay_absolute_stdev=False, grid_seasonal_absolute_phase=False, grid_to_raster=False, min_span=[2, 0.6],
-                 period_limit=0., numCPUs=8, phaseamp_per_station=False):
+                 period_limit=0., numCPUs=os.cpu_count(), phaseamp_per_station=False):
         self.fname = filearg
         self.col_name = col_name
         self.unit = unit
